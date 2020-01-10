@@ -1,0 +1,1 @@
+export const types = ['fast food', 'american', 'poland', 'pizza', 'italian'];
