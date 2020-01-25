@@ -3,7 +3,7 @@
   <b-field :label="$t(`ui.addressLabel`)" custom-class="has-text-white	">
     <b-input v-model="address"></b-input>
   </b-field>
-    <b-button tag="router-link"
+    <b-button tag="router-link" data-cy="go-button"
               to="/restaurants">{{$t(`ui.showRestaurants`)}}</b-button>
   </div>
 </template>

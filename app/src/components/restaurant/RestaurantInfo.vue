@@ -1,5 +1,4 @@
 <template>
-  <router-link to="restaurants/item">
   <div class="card">
     <div class="card-image">
       <figure class="image is-5by3">
@@ -37,23 +36,26 @@
       </div>
     </div>
   </div>
-  </router-link>
 </template>
 
 <script>
 	export default {
-		name: "RestaurantPreview",
-    props: {
-			restaurant: {
-			  type: Object,
-				required: true
-      }
+		name: "RestaurantInfo",
+    computed: {
+			restaurant: function () {
+        return {
+					name: 'McDonald',
+					address: 'Grunwaldzka 249',
+					image: 'https://cdn.galleries.smcloud.net/t/galleries/gf-1y8X-q6rp-7H9N_mcdonalds-przyjedzie-do-ciebie-664x442-nocrop.jpg',
+					id: '1337',
+					types: ['fastFood', 'american', 'burger'],  // max 7
+					rating: 4.7
+				}
+			}
     }
 	}
 </script>
 
 <style scoped>
-.card {
-  margin-top: 2rem;
-}
+
 </style>

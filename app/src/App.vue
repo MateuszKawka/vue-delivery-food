@@ -1,17 +1,20 @@
 <template>
-  <div>
-    <Menu />
+  <main class="container">
+    <TopBar />
+    <AddressInfo/>
     <router-view/>
-  </div>
+  </main>
 </template>
 
 <script>
-  import Menu from '@/components/UI/Menu'
-
+  import TopBar from '@/components/UI/TopBar'
+  import AddressInfo
+		from "./components/AddressInfo";
     export default  {
   	  name: 'App',
       components: {
-  		  Menu
+				TopBar,
+				AddressInfo
       }
   }
 </script>

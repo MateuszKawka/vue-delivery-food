@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import filters from './modules/filters.module'
+import filters from './modules/filters/filters.module'
+import restaurants from './modules/restaurants/restaurants.module'
 
 Vue.use(Vuex);
 
@@ -14,6 +15,7 @@ export default new Vuex.Store({
   actions: {
   },
   modules: {
-    filters: filters
+    filters: filters,
+    restaurants: restaurants
   }
 })

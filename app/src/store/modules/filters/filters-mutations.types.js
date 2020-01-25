@@ -1,0 +1,3 @@
+export const SET_FILTERS= 'SET_FILTERS';
+export const REMOVE_FILTER = 'REMOVE_FILTER';
+export const REMOVE_ALL_FILTERS = 'REMOVE_ALL_FILTERS';
